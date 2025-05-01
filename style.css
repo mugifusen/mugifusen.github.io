@@ -1,112 +1,107 @@
-/* 基本設定 */
+/* リセット & ベース */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f7f9fb;
     color: #333;
     line-height: 1.6;
-}
-
-/* ヘッダー */
-header {
-    background-color: #005bac;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    color: #cce6ff;
-}
-
-/* メインコンテンツ */
-main {
+  }
+  /* リンク */
+  a {
+    color: #1a3f7a;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ヘッダー */
+  .site-header {
+    background: #1a3f7a;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  .site-header .inner {
     max-width: 900px;
-    margin: 30px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* プロフィールセクション */
-.profile {
-    margin-bottom: 30px;
-}
-
-.profile h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #005bac;
-}
-
-.profile p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-/* 業績セクション */
-.achievements h2 {
-    font-size: 2em;
-    color: #005bac;
-    margin-bottom: 20px;
-}
-
-.achievements-category {
-    margin-bottom: 20px;
-}
-
-.achievements-category h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .site-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .site-nav a {
+    margin-left: 1rem;
+    font-weight: 400;
+  }
+  
+  /* メイン */
+  .site-main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  /* カード */
+  .card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #1a3f7a;
+  }
+  
+  /* プロフィール定義リスト */
+  dl dt {
+    font-weight: 700;
+    margin-top: 0.8rem;
+  }
+  dl dd {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* 論文リスト */
+  .paper-list {
+    list-style: none;
     padding-left: 0;
-}
-
-ul li {
-    font-size: 1.1em;
-    padding-left: 20px;
+  }
+  .paper-list li {
     position: relative;
-}
-
-ul li::before {
-    content: '•';
-    color: #005bac;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .paper-list li::before {
+    content: '●';
     position: absolute;
     left: 0;
-    font-size: 1.5em;
-}
-
-ul li a {
-    color: #005bac;
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-/* フッター */
-footer {
+    top: 0.2rem;
+    font-size: 0.8rem;
+    color: #1a3f7a;
+  }
+  .date {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* フッター */
+  .site-footer {
     text-align: center;
-    padding: 20px;
-    background-color: #005bac;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 40px;
-}
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  

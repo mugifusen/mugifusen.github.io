@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安田大朗 | ポートフォリオ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>安田大朗 | Graduate Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>安田 大朗</h1>
-            <p class="subtitle">香川大学大学院 創発科学研究科 M1 | 安藤研究室 | 自然言語処理</p>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="inner">
+      <h1 class="site-title">安田 大朗</h1>
+      <nav class="site-nav">
+        <a href="#profile">Profile</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="profile">
-            <h2>プロフィール</h2>
-            <p><strong>所属:</strong> 香川大学大学院 創発科学研究科</p>
-            <p><strong>学年:</strong> M1</p>
-            <p><strong>研究室:</strong> 安藤研究室</p>
-            <p><strong>専攻:</strong> 自然言語処理</p>
-        </section>
+  <main class="site-main">
+    <section id="profile" class="card">
+      <h2>プロフィール</h2>
+      <dl>
+        <dt>所属</dt><dd>香川大学大学院 創発科学研究科</dd>
+        <dt>学年</dt><dd>M1</dd>
+        <dt>研究室</dt><dd>安藤研究室</dd>
+        <dt>専門</dt><dd>自然言語処理</dd>
+      </dl>
+    </section>
 
-        <section class="achievements">
-            <h2>業績</h2>
-            <div class="achievements-category">
-                <h3>論文</h3>
-                <ul>
-                    <li>
-                        <strong><a href="https://confit.atlas.jp/guide/event/jsai2025/subject/3G6-GS-6-05/tables?cryptoId=" target="_blank">小説台詞からの登場人物と発話者に紐づく人間関係語の抽出, (人工知能学会)</a></strong><br>
-                        <strong>掲載年月:</strong> 2025年5月
-                    </li>
-                    <li>
-                        <strong><a href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q10-20.pdf" target="_blank">小説のセリフを利用した登場人物に紐づく人間関係語の抽出, (言語処理学会)</a></strong><br>
-                        <strong>掲載年月:</strong> 2025年3月
-                    </li>
-                    <li>
-                        <strong><a href="https://www.sjciee.org/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/" target="_blank">小説の台詞で言及される人間関係の分析, (四国支部連合大会)</a></strong><br>
-                        <strong>掲載年月:</strong> 2024年9月
-                    </li>
-                </ul>
-            </div>
-            <div class="achievements-category">
-                <h3>国際 (査読付き)</h3>
-                <ul>
-                    <li>IIAI-AAI (査読審査中)</li>
-                </ul>
-            </div>
-        </section>
-    </main>
+    <section id="achievements" class="card">
+      <h2>業績</h2>
+      <h3>国内論文</h3>
+      <ul class="paper-list">
+        <li>
+          <a href="https://confit.atlas.jp/guide/event/jsai2025/subject/3G6-GS-6-05/tables?cryptoId=" target="_blank">
+            小説台詞からの登場人物と発話者に紐づく人間関係語の抽出, (人工知能学会)
+          </a>
+          <span class="date">2025年5月</span>
+        </li>
+        <li>
+          <a href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/Q10-20.pdf" target="_blank">
+            小説のセリフを利用した登場人物に紐づく人間関係語の抽出, (言語処理学会)
+          </a>
+          <span class="date">2025年3月</span>
+        </li>
+        <li>
+          <a href="https://www.sjciee.org/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/" target="_blank">
+            小説の台詞で言及される人間関係の分析, (四国支部連合大会)
+          </a>
+          <span class="date">2024年9月</span>
+        </li>
+      </ul>
+      <h3>国際論文 (査読付き)</h3>
+      <ul class="paper-list">
+        <li>IIAI-AAI (査読審査中)</li>
+      </ul>
+    </section>
+  </main>
 
-    <footer>
-    </footer>
+  <footer class="site-footer">
+  </footer>
 </body>
 </html>
