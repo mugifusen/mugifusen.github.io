@@ -1,0 +1,112 @@
+/* 基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+    background-color: #005bac;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #cce6ff;
+}
+
+/* メインコンテンツ */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* プロフィールセクション */
+.profile {
+    margin-bottom: 30px;
+}
+
+.profile h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #005bac;
+}
+
+.profile p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* 業績セクション */
+.achievements h2 {
+    font-size: 2em;
+    color: #005bac;
+    margin-bottom: 20px;
+}
+
+.achievements-category {
+    margin-bottom: 20px;
+}
+
+.achievements-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    color: #005bac;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+}
+
+ul li a {
+    color: #005bac;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005bac;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 40px;
+}
