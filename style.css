@@ -96,7 +96,23 @@
     font-size: 0.9rem;
     color: #666;
   }
-  
+
+  /* 著者情報 */
+.paper-list li .authors {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+/* 論文メタ情報（日付・著者） */
+.paper-list li .meta {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #666;
+  letter-spacing: 0.02em;
+}
+
   /* フッター */
   .site-footer {
     text-align: center;
@@ -104,4 +120,22 @@
     font-size: 0.9rem;
     color: #666;
   }
-  
+  /* 受賞リスト */
+  .award-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .award-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .award-list small {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.85rem;
+    color: #666;
+  }
